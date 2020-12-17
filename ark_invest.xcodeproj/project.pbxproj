@@ -1,0 +1,731 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8198B6A4ADD807EB2AB4CF17 /* Pods_ark_invest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77B6F04C3B5C452B0A114BF /* Pods_ark_invest.framework */; };
+		BB96959C25888B1500606EDF /* CompanyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB96959B25888B1500606EDF /* CompanyModel.swift */; };
+		BB9695B22588919700606EDF /* ETFModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9695B12588919700606EDF /* ETFModel.swift */; };
+		BB9695B72588927D00606EDF /* ETFRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9695B62588927D00606EDF /* ETFRow.swift */; };
+		BB9695BD258893EC00606EDF /* ETFList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9695BC258893EC00606EDF /* ETFList.swift */; };
+		BB9695C22588944200606EDF /* ETFDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9695C12588944200606EDF /* ETFDetail.swift */; };
+		BB9695C7258894D400606EDF /* ETFListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9695C6258894D400606EDF /* ETFListData.swift */; };
+		BB9695CD2588956B00606EDF /* etfData.json in Resources */ = {isa = PBXBuildFile; fileRef = BB9695CC2588956A00606EDF /* etfData.json */; };
+		BB9695E025889EC300606EDF /* ETFDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9695DF25889EC300606EDF /* ETFDetailModel.swift */; };
+		BB9695E525889FAE00606EDF /* ETFDetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9695E425889FAE00606EDF /* ETFDetailRow.swift */; };
+		BB9695ED2588A73300606EDF /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9695EC2588A73300606EDF /* String.swift */; };
+		BB9695F22589DE8F00606EDF /* ETFDetailModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9695F12589DE8F00606EDF /* ETFDetailModels.swift */; };
+		BB9695F72589F22D00606EDF /* DeltaEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9695F62589F22D00606EDF /* DeltaEnum.swift */; };
+		BB9695FC2589F27A00606EDF /* DeltaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9695FB2589F27A00606EDF /* DeltaModel.swift */; };
+		BBECED692583675B00289DB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBECED682583675B00289DB1 /* AppDelegate.swift */; };
+		BBECED6B2583675B00289DB1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBECED6A2583675B00289DB1 /* SceneDelegate.swift */; };
+		BBECED6D2583675B00289DB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBECED6C2583675B00289DB1 /* ContentView.swift */; };
+		BBECED6F2583675D00289DB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBECED6E2583675D00289DB1 /* Assets.xcassets */; };
+		BBECED722583675D00289DB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBECED712583675D00289DB1 /* Preview Assets.xcassets */; };
+		BBECED752583675D00289DB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBECED732583675D00289DB1 /* LaunchScreen.storyboard */; };
+		BBECED802583675D00289DB1 /* ark_investTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBECED7F2583675D00289DB1 /* ark_investTests.swift */; };
+		BBECED8B2583675E00289DB1 /* ark_investUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBECED8A2583675E00289DB1 /* ark_investUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BBECED7C2583675D00289DB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBECED5D2583675B00289DB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBECED642583675B00289DB1;
+			remoteInfo = ark_invest;
+		};
+		BBECED872583675E00289DB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBECED5D2583675B00289DB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBECED642583675B00289DB1;
+			remoteInfo = ark_invest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B77B6F04C3B5C452B0A114BF /* Pods_ark_invest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ark_invest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB96959B25888B1500606EDF /* CompanyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyModel.swift; sourceTree = "<group>"; };
+		BB9695B12588919700606EDF /* ETFModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETFModel.swift; sourceTree = "<group>"; };
+		BB9695B62588927D00606EDF /* ETFRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETFRow.swift; sourceTree = "<group>"; };
+		BB9695BC258893EC00606EDF /* ETFList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETFList.swift; sourceTree = "<group>"; };
+		BB9695C12588944200606EDF /* ETFDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETFDetail.swift; sourceTree = "<group>"; };
+		BB9695C6258894D400606EDF /* ETFListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETFListData.swift; sourceTree = "<group>"; };
+		BB9695CC2588956A00606EDF /* etfData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = etfData.json; sourceTree = "<group>"; };
+		BB9695DF25889EC300606EDF /* ETFDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETFDetailModel.swift; sourceTree = "<group>"; };
+		BB9695E425889FAE00606EDF /* ETFDetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETFDetailRow.swift; sourceTree = "<group>"; };
+		BB9695EC2588A73300606EDF /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		BB9695F12589DE8F00606EDF /* ETFDetailModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETFDetailModels.swift; sourceTree = "<group>"; };
+		BB9695F62589F22D00606EDF /* DeltaEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeltaEnum.swift; sourceTree = "<group>"; };
+		BB9695FB2589F27A00606EDF /* DeltaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeltaModel.swift; sourceTree = "<group>"; };
+		BBECED652583675B00289DB1 /* ark_invest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ark_invest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBECED682583675B00289DB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BBECED6A2583675B00289DB1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BBECED6C2583675B00289DB1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BBECED6E2583675D00289DB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BBECED712583675D00289DB1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BBECED742583675D00289DB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BBECED762583675D00289DB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBECED7B2583675D00289DB1 /* ark_investTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ark_investTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBECED7F2583675D00289DB1 /* ark_investTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ark_investTests.swift; sourceTree = "<group>"; };
+		BBECED812583675D00289DB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBECED862583675D00289DB1 /* ark_investUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ark_investUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBECED8A2583675E00289DB1 /* ark_investUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ark_investUITests.swift; sourceTree = "<group>"; };
+		BBECED8C2583675E00289DB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4EFC78917751F85B8A76E86 /* Pods-ark_invest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ark_invest.debug.xcconfig"; path = "Target Support Files/Pods-ark_invest/Pods-ark_invest.debug.xcconfig"; sourceTree = "<group>"; };
+		E81BD5564C5ACAAA76C619AB /* Pods-ark_invest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ark_invest.release.xcconfig"; path = "Target Support Files/Pods-ark_invest/Pods-ark_invest.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BBECED622583675B00289DB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8198B6A4ADD807EB2AB4CF17 /* Pods_ark_invest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBECED782583675D00289DB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBECED832583675D00289DB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		920CF2830D796CB02A0ADF36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B77B6F04C3B5C452B0A114BF /* Pods_ark_invest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		92776F1D6D32D6E4180A6308 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C4EFC78917751F85B8A76E86 /* Pods-ark_invest.debug.xcconfig */,
+				E81BD5564C5ACAAA76C619AB /* Pods-ark_invest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BB9695CB258894F800606EDF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BB9695CC2588956A00606EDF /* etfData.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BBECED5C2583675B00289DB1 = {
+			isa = PBXGroup;
+			children = (
+				BB9695FB2589F27A00606EDF /* DeltaModel.swift */,
+				BB9695F62589F22D00606EDF /* DeltaEnum.swift */,
+				BB9695F12589DE8F00606EDF /* ETFDetailModels.swift */,
+				BB9695EC2588A73300606EDF /* String.swift */,
+				BBECED672583675B00289DB1 /* ark_invest */,
+				BBECED7E2583675D00289DB1 /* ark_investTests */,
+				BBECED892583675E00289DB1 /* ark_investUITests */,
+				BBECED662583675B00289DB1 /* Products */,
+				92776F1D6D32D6E4180A6308 /* Pods */,
+				920CF2830D796CB02A0ADF36 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BBECED662583675B00289DB1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BBECED652583675B00289DB1 /* ark_invest.app */,
+				BBECED7B2583675D00289DB1 /* ark_investTests.xctest */,
+				BBECED862583675D00289DB1 /* ark_investUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBECED672583675B00289DB1 /* ark_invest */ = {
+			isa = PBXGroup;
+			children = (
+				BB9695CB258894F800606EDF /* Resources */,
+				BBECED682583675B00289DB1 /* AppDelegate.swift */,
+				BBECED6A2583675B00289DB1 /* SceneDelegate.swift */,
+				BBECED6C2583675B00289DB1 /* ContentView.swift */,
+				BBECED6E2583675D00289DB1 /* Assets.xcassets */,
+				BBECED732583675D00289DB1 /* LaunchScreen.storyboard */,
+				BBECED762583675D00289DB1 /* Info.plist */,
+				BBECED702583675D00289DB1 /* Preview Content */,
+				BB96959B25888B1500606EDF /* CompanyModel.swift */,
+				BB9695B12588919700606EDF /* ETFModel.swift */,
+				BB9695B62588927D00606EDF /* ETFRow.swift */,
+				BB9695BC258893EC00606EDF /* ETFList.swift */,
+				BB9695C12588944200606EDF /* ETFDetail.swift */,
+				BB9695C6258894D400606EDF /* ETFListData.swift */,
+				BB9695DF25889EC300606EDF /* ETFDetailModel.swift */,
+				BB9695E425889FAE00606EDF /* ETFDetailRow.swift */,
+			);
+			path = ark_invest;
+			sourceTree = "<group>";
+		};
+		BBECED702583675D00289DB1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BBECED712583675D00289DB1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BBECED7E2583675D00289DB1 /* ark_investTests */ = {
+			isa = PBXGroup;
+			children = (
+				BBECED7F2583675D00289DB1 /* ark_investTests.swift */,
+				BBECED812583675D00289DB1 /* Info.plist */,
+			);
+			path = ark_investTests;
+			sourceTree = "<group>";
+		};
+		BBECED892583675E00289DB1 /* ark_investUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BBECED8A2583675E00289DB1 /* ark_investUITests.swift */,
+				BBECED8C2583675E00289DB1 /* Info.plist */,
+			);
+			path = ark_investUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BBECED642583675B00289DB1 /* ark_invest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBECED8F2583675E00289DB1 /* Build configuration list for PBXNativeTarget "ark_invest" */;
+			buildPhases = (
+				9F366C4C73A0D0BA4FF8F1D5 /* [CP] Check Pods Manifest.lock */,
+				BBECED612583675B00289DB1 /* Sources */,
+				BBECED622583675B00289DB1 /* Frameworks */,
+				BBECED632583675B00289DB1 /* Resources */,
+				A925C121D9ABD7BDEE8892BA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ark_invest;
+			productName = ark_invest;
+			productReference = BBECED652583675B00289DB1 /* ark_invest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BBECED7A2583675D00289DB1 /* ark_investTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBECED922583675E00289DB1 /* Build configuration list for PBXNativeTarget "ark_investTests" */;
+			buildPhases = (
+				BBECED772583675D00289DB1 /* Sources */,
+				BBECED782583675D00289DB1 /* Frameworks */,
+				BBECED792583675D00289DB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BBECED7D2583675D00289DB1 /* PBXTargetDependency */,
+			);
+			name = ark_investTests;
+			productName = ark_investTests;
+			productReference = BBECED7B2583675D00289DB1 /* ark_investTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BBECED852583675D00289DB1 /* ark_investUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBECED952583675E00289DB1 /* Build configuration list for PBXNativeTarget "ark_investUITests" */;
+			buildPhases = (
+				BBECED822583675D00289DB1 /* Sources */,
+				BBECED832583675D00289DB1 /* Frameworks */,
+				BBECED842583675D00289DB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BBECED882583675E00289DB1 /* PBXTargetDependency */,
+			);
+			name = ark_investUITests;
+			productName = ark_investUITests;
+			productReference = BBECED862583675D00289DB1 /* ark_investUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BBECED5D2583675B00289DB1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "SHUHUI YANG";
+				TargetAttributes = {
+					BBECED642583675B00289DB1 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					BBECED7A2583675D00289DB1 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = BBECED642583675B00289DB1;
+					};
+					BBECED852583675D00289DB1 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = BBECED642583675B00289DB1;
+					};
+				};
+			};
+			buildConfigurationList = BBECED602583675B00289DB1 /* Build configuration list for PBXProject "ark_invest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BBECED5C2583675B00289DB1;
+			productRefGroup = BBECED662583675B00289DB1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BBECED642583675B00289DB1 /* ark_invest */,
+				BBECED7A2583675D00289DB1 /* ark_investTests */,
+				BBECED852583675D00289DB1 /* ark_investUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BBECED632583675B00289DB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBECED752583675D00289DB1 /* LaunchScreen.storyboard in Resources */,
+				BB9695CD2588956B00606EDF /* etfData.json in Resources */,
+				BBECED722583675D00289DB1 /* Preview Assets.xcassets in Resources */,
+				BBECED6F2583675D00289DB1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBECED792583675D00289DB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBECED842583675D00289DB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9F366C4C73A0D0BA4FF8F1D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ark_invest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A925C121D9ABD7BDEE8892BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ark_invest/Pods-ark_invest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ark_invest/Pods-ark_invest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ark_invest/Pods-ark_invest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BBECED612583675B00289DB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB9695B22588919700606EDF /* ETFModel.swift in Sources */,
+				BB9695F72589F22D00606EDF /* DeltaEnum.swift in Sources */,
+				BBECED692583675B00289DB1 /* AppDelegate.swift in Sources */,
+				BB96959C25888B1500606EDF /* CompanyModel.swift in Sources */,
+				BBECED6B2583675B00289DB1 /* SceneDelegate.swift in Sources */,
+				BB9695FC2589F27A00606EDF /* DeltaModel.swift in Sources */,
+				BB9695C22588944200606EDF /* ETFDetail.swift in Sources */,
+				BB9695F22589DE8F00606EDF /* ETFDetailModels.swift in Sources */,
+				BB9695BD258893EC00606EDF /* ETFList.swift in Sources */,
+				BB9695ED2588A73300606EDF /* String.swift in Sources */,
+				BB9695E525889FAE00606EDF /* ETFDetailRow.swift in Sources */,
+				BB9695B72588927D00606EDF /* ETFRow.swift in Sources */,
+				BB9695E025889EC300606EDF /* ETFDetailModel.swift in Sources */,
+				BBECED6D2583675B00289DB1 /* ContentView.swift in Sources */,
+				BB9695C7258894D400606EDF /* ETFListData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBECED772583675D00289DB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBECED802583675D00289DB1 /* ark_investTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBECED822583675D00289DB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBECED8B2583675E00289DB1 /* ark_investUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BBECED7D2583675D00289DB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBECED642583675B00289DB1 /* ark_invest */;
+			targetProxy = BBECED7C2583675D00289DB1 /* PBXContainerItemProxy */;
+		};
+		BBECED882583675E00289DB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBECED642583675B00289DB1 /* ark_invest */;
+			targetProxy = BBECED872583675E00289DB1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BBECED732583675D00289DB1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBECED742583675D00289DB1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BBECED8D2583675E00289DB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BBECED8E2583675E00289DB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BBECED902583675E00289DB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4EFC78917751F85B8A76E86 /* Pods-ark_invest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ark_invest/Preview Content\"";
+				DEVELOPMENT_TEAM = PX8M9XWEX4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ark_invest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "XinSu.ark-invest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BBECED912583675E00289DB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E81BD5564C5ACAAA76C619AB /* Pods-ark_invest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ark_invest/Preview Content\"";
+				DEVELOPMENT_TEAM = PX8M9XWEX4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ark_invest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "XinSu.ark-invest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BBECED932583675E00289DB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PX8M9XWEX4;
+				INFOPLIST_FILE = ark_investTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "XinSu.ark-investTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ark_invest.app/ark_invest";
+			};
+			name = Debug;
+		};
+		BBECED942583675E00289DB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PX8M9XWEX4;
+				INFOPLIST_FILE = ark_investTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "XinSu.ark-investTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ark_invest.app/ark_invest";
+			};
+			name = Release;
+		};
+		BBECED962583675E00289DB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PX8M9XWEX4;
+				INFOPLIST_FILE = ark_investUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "XinSu.ark-investUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ark_invest;
+			};
+			name = Debug;
+		};
+		BBECED972583675E00289DB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PX8M9XWEX4;
+				INFOPLIST_FILE = ark_investUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "XinSu.ark-investUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ark_invest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BBECED602583675B00289DB1 /* Build configuration list for PBXProject "ark_invest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBECED8D2583675E00289DB1 /* Debug */,
+				BBECED8E2583675E00289DB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBECED8F2583675E00289DB1 /* Build configuration list for PBXNativeTarget "ark_invest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBECED902583675E00289DB1 /* Debug */,
+				BBECED912583675E00289DB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBECED922583675E00289DB1 /* Build configuration list for PBXNativeTarget "ark_investTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBECED932583675E00289DB1 /* Debug */,
+				BBECED942583675E00289DB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBECED952583675E00289DB1 /* Build configuration list for PBXNativeTarget "ark_investUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBECED962583675E00289DB1 /* Debug */,
+				BBECED972583675E00289DB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BBECED5D2583675B00289DB1 /* Project object */;
+}
