@@ -9,6 +9,7 @@
 import Foundation
 
 var etfs: [ETFModel] = load("etfData.json")
+var ipos: [IPOModel] = load("ipoData.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

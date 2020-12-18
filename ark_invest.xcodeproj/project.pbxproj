@@ -21,6 +21,14 @@
 		BB9695F22589DE8F00606EDF /* ETFDetailModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9695F12589DE8F00606EDF /* ETFDetailModels.swift */; };
 		BB9695F72589F22D00606EDF /* DeltaEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9695F62589F22D00606EDF /* DeltaEnum.swift */; };
 		BB9695FC2589F27A00606EDF /* DeltaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9695FB2589F27A00606EDF /* DeltaModel.swift */; };
+		BB969601258B258800606EDF /* HomePageItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB969600258B258800606EDF /* HomePageItemModel.swift */; };
+		BB96960D258B295A00606EDF /* IPOModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB96960C258B295A00606EDF /* IPOModel.swift */; };
+		BB969615258B29E600606EDF /* ipoData.json in Resources */ = {isa = PBXBuildFile; fileRef = BB969614258B29E600606EDF /* ipoData.json */; };
+		BB96962A258B2CFC00606EDF /* IPODetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB969629258B2CFC00606EDF /* IPODetail.swift */; };
+		BB969632258B2D0500606EDF /* IPORow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB969631258B2D0500606EDF /* IPORow.swift */; };
+		BB96963A258B2E2E00606EDF /* IPODetailsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB969639258B2E2E00606EDF /* IPODetailsModels.swift */; };
+		BB96963F258B2E6400606EDF /* IPODetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB96963E258B2E6400606EDF /* IPODetailRow.swift */; };
+		BB969644258B2E9800606EDF /* IPODetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB969643258B2E9800606EDF /* IPODetailModel.swift */; };
 		BBECED692583675B00289DB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBECED682583675B00289DB1 /* AppDelegate.swift */; };
 		BBECED6B2583675B00289DB1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBECED6A2583675B00289DB1 /* SceneDelegate.swift */; };
 		BBECED6D2583675B00289DB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBECED6C2583675B00289DB1 /* ContentView.swift */; };
@@ -63,6 +71,14 @@
 		BB9695F12589DE8F00606EDF /* ETFDetailModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETFDetailModels.swift; sourceTree = "<group>"; };
 		BB9695F62589F22D00606EDF /* DeltaEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeltaEnum.swift; sourceTree = "<group>"; };
 		BB9695FB2589F27A00606EDF /* DeltaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeltaModel.swift; sourceTree = "<group>"; };
+		BB969600258B258800606EDF /* HomePageItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageItemModel.swift; sourceTree = "<group>"; };
+		BB96960C258B295A00606EDF /* IPOModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPOModel.swift; sourceTree = "<group>"; };
+		BB969614258B29E600606EDF /* ipoData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ipoData.json; sourceTree = "<group>"; };
+		BB969629258B2CFC00606EDF /* IPODetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPODetail.swift; sourceTree = "<group>"; };
+		BB969631258B2D0500606EDF /* IPORow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPORow.swift; sourceTree = "<group>"; };
+		BB969639258B2E2E00606EDF /* IPODetailsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPODetailsModels.swift; sourceTree = "<group>"; };
+		BB96963E258B2E6400606EDF /* IPODetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPODetailRow.swift; sourceTree = "<group>"; };
+		BB969643258B2E9800606EDF /* IPODetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPODetailModel.swift; sourceTree = "<group>"; };
 		BBECED652583675B00289DB1 /* ark_invest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ark_invest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBECED682583675B00289DB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBECED6A2583675B00289DB1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,18 +143,41 @@
 		BB9695CB258894F800606EDF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BB969614258B29E600606EDF /* ipoData.json */,
 				BB9695CC2588956A00606EDF /* etfData.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		BBECED5C2583675B00289DB1 = {
+		BB96960B258B291C00606EDF /* models */ = {
 			isa = PBXGroup;
 			children = (
 				BB9695FB2589F27A00606EDF /* DeltaModel.swift */,
-				BB9695F62589F22D00606EDF /* DeltaEnum.swift */,
-				BB9695F12589DE8F00606EDF /* ETFDetailModels.swift */,
-				BB9695EC2588A73300606EDF /* String.swift */,
+				BB9695B12588919700606EDF /* ETFModel.swift */,
+				BB9695DF25889EC300606EDF /* ETFDetailModel.swift */,
+				BB969600258B258800606EDF /* HomePageItemModel.swift */,
+				BB96960C258B295A00606EDF /* IPOModel.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		BB969621258B2B0400606EDF /* etfs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = etfs;
+			sourceTree = "<group>";
+		};
+		BB969622258B2B5700606EDF /* ipo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ipo;
+			sourceTree = "<group>";
+		};
+		BBECED5C2583675B00289DB1 = {
+			isa = PBXGroup;
+			children = (
 				BBECED672583675B00289DB1 /* ark_invest */,
 				BBECED7E2583675D00289DB1 /* ark_investTests */,
 				BBECED892583675E00289DB1 /* ark_investUITests */,
@@ -161,22 +200,31 @@
 		BBECED672583675B00289DB1 /* ark_invest */ = {
 			isa = PBXGroup;
 			children = (
-				BB9695CB258894F800606EDF /* Resources */,
+				BB969622258B2B5700606EDF /* ipo */,
+				BB969621258B2B0400606EDF /* etfs */,
+				BB96960B258B291C00606EDF /* models */,
+				BB9695EC2588A73300606EDF /* String.swift */,
+				BB9695C12588944200606EDF /* ETFDetail.swift */,
+				BB9695C6258894D400606EDF /* ETFListData.swift */,
+				BB9695BC258893EC00606EDF /* ETFList.swift */,
 				BBECED682583675B00289DB1 /* AppDelegate.swift */,
 				BBECED6A2583675B00289DB1 /* SceneDelegate.swift */,
 				BBECED6C2583675B00289DB1 /* ContentView.swift */,
+				BB9695F62589F22D00606EDF /* DeltaEnum.swift */,
+				BB9695F12589DE8F00606EDF /* ETFDetailModels.swift */,
+				BB96959B25888B1500606EDF /* CompanyModel.swift */,
+				BB9695B62588927D00606EDF /* ETFRow.swift */,
+				BB9695E425889FAE00606EDF /* ETFDetailRow.swift */,
+				BB969629258B2CFC00606EDF /* IPODetail.swift */,
+				BB969631258B2D0500606EDF /* IPORow.swift */,
+				BB969639258B2E2E00606EDF /* IPODetailsModels.swift */,
+				BB96963E258B2E6400606EDF /* IPODetailRow.swift */,
+				BB969643258B2E9800606EDF /* IPODetailModel.swift */,
 				BBECED6E2583675D00289DB1 /* Assets.xcassets */,
 				BBECED732583675D00289DB1 /* LaunchScreen.storyboard */,
 				BBECED762583675D00289DB1 /* Info.plist */,
 				BBECED702583675D00289DB1 /* Preview Content */,
-				BB96959B25888B1500606EDF /* CompanyModel.swift */,
-				BB9695B12588919700606EDF /* ETFModel.swift */,
-				BB9695B62588927D00606EDF /* ETFRow.swift */,
-				BB9695BC258893EC00606EDF /* ETFList.swift */,
-				BB9695C12588944200606EDF /* ETFDetail.swift */,
-				BB9695C6258894D400606EDF /* ETFListData.swift */,
-				BB9695DF25889EC300606EDF /* ETFDetailModel.swift */,
-				BB9695E425889FAE00606EDF /* ETFDetailRow.swift */,
+				BB9695CB258894F800606EDF /* Resources */,
 			);
 			path = ark_invest;
 			sourceTree = "<group>";
@@ -316,6 +364,7 @@
 				BBECED752583675D00289DB1 /* LaunchScreen.storyboard in Resources */,
 				BB9695CD2588956B00606EDF /* etfData.json in Resources */,
 				BBECED722583675D00289DB1 /* Preview Assets.xcassets in Resources */,
+				BB969615258B29E600606EDF /* ipoData.json in Resources */,
 				BBECED6F2583675D00289DB1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,13 +440,20 @@
 				BB9695FC2589F27A00606EDF /* DeltaModel.swift in Sources */,
 				BB9695C22588944200606EDF /* ETFDetail.swift in Sources */,
 				BB9695F22589DE8F00606EDF /* ETFDetailModels.swift in Sources */,
+				BB969601258B258800606EDF /* HomePageItemModel.swift in Sources */,
 				BB9695BD258893EC00606EDF /* ETFList.swift in Sources */,
 				BB9695ED2588A73300606EDF /* String.swift in Sources */,
+				BB96960D258B295A00606EDF /* IPOModel.swift in Sources */,
 				BB9695E525889FAE00606EDF /* ETFDetailRow.swift in Sources */,
 				BB9695B72588927D00606EDF /* ETFRow.swift in Sources */,
 				BB9695E025889EC300606EDF /* ETFDetailModel.swift in Sources */,
+				BB96963A258B2E2E00606EDF /* IPODetailsModels.swift in Sources */,
 				BBECED6D2583675B00289DB1 /* ContentView.swift in Sources */,
+				BB969644258B2E9800606EDF /* IPODetailModel.swift in Sources */,
 				BB9695C7258894D400606EDF /* ETFListData.swift in Sources */,
+				BB969632258B2D0500606EDF /* IPORow.swift in Sources */,
+				BB96962A258B2CFC00606EDF /* IPODetail.swift in Sources */,
+				BB96963F258B2E6400606EDF /* IPODetailRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
