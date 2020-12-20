@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct ETFDetailModel: Hashable, Identifiable {
     var id: Int
@@ -15,4 +16,19 @@ struct ETFDetailModel: Hashable, Identifiable {
     var percentage: String
     var url: String
     var delta: DeltaModel
+    
+    func getColor() -> Color {
+        switch delta.deltaEnum {
+            case .deltaUp:
+                return Color.green
+            case .noChange:
+                return Color.primary
+            case .deltaDown:
+                return Color.red
+            case .remove:
+                return Color.gray
+            case .newAdded:
+                return Color.blue
+        }
+    }
 }

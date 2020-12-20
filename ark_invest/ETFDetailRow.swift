@@ -17,22 +17,31 @@ struct ETFDetailRow: View {
                     let height: CGFloat = 30
                     Text(etfDetail.name).frame(width: gp.size.width / 3, height: height , alignment: .leading).lineLimit(1)
                                         
-                    Text(etfDetail.ticker).frame(width: gp.size.width, height: height, alignment: .center)
+                    Text(etfDetail.ticker).position(CGPoint(x: gp.size.width * 0.45, y: height/2))
+                    
+                    if (etfDetail.delta.deltaEnum != DeltaEnum.remove) {
+                        Text(etfDetail.percentage).position(CGPoint(x: gp.size.width * 2 / 3, y: height/2))
+                    }
+                    
+                    if (etfDetail.delta.deltaEnum != DeltaEnum.remove) {
+                        Text(etfDetail.delta.deltaVal).position(CGPoint(x: gp.size.width * 5 / 6 + 20, y: height/2)).foregroundColor(etfDetail.getColor())
+                    }
+                    
+                    if (etfDetail.delta.deltaEnum == DeltaEnum.deltaUp) {
+                        Image("arrow_up").renderingMode(.template).foregroundColor(Color.green)
+                            .position(CGPoint(x: gp.size.width * 5 / 6, y: height/2))
+                    }
+                    
+                    if (etfDetail.delta.deltaEnum == DeltaEnum.deltaDown) {
+                        Image("arrow_down").renderingMode(.template).foregroundColor(Color.red)
+                            .position(CGPoint(x: gp.size.width * 5 / 6, y: height/2))
+                    }
+                    
+                    if (etfDetail.delta.deltaEnum == DeltaEnum.newAdded) {
+                        Text("NEW").foregroundColor(Color.green)
+                            .position(CGPoint(x: gp.size.width * 5 / 6, y: height/2))
+                    }
                                         
-//                    switch etfDetail.delta.deltaEnum {
-//                    case .deltaUp:
-//                        Text(etfDetail.delta.deltaVal).frame(width: gp.size.width, height: height, alignment: .trailing).background(Color.green)
-//                    case .noChange:
-//                        Text(etfDetail.delta.deltaVal).frame(width: gp.size.width, height: height, alignment: .trailing)
-//                    case .deltaDown:
-//                        Text(etfDetail.delta.deltaVal).frame(width: gp.size.width, height: height, alignment: .trailing).background(Color.red)
-//                    case .remove:
-//                        Text(etfDetail.delta.deltaVal).frame(width: gp.size.width, height: height, alignment: .trailing).background(Color.grey)
-//                    case .newAdded:
-//                        Text(etfDetail.delta.deltaVal).frame(width: gp.size.width, height: height, alignment: .trailing).background(Color.yellow)
-//
-//                    }
-                    Text(etfDetail.percentage).frame(width: gp.size.width, height: height, alignment: .trailing)
                 }
                 .onTapGesture {
                     if let url = URL(string: etfDetail.url) {

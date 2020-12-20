@@ -17,13 +17,20 @@ struct ETFDetail: View {
     
     init(etf: ETFModel) {
         self.etf = etf
-//        parsePDF()
         self.etfDetails = ETFDetailsModels(etfModel: etf)
     }
         
     var body: some View {
-        List(etfDetails.etfDetails) { etfitem in
-            ETFDetailRow(etfDetail: etfitem)
+        List {
+            ForEach(etfDetails.etfDetails) { section in
+                Section(header: Text(section.name)) {
+                    let content = section.content as! [ETFDetailModel]
+                    ForEach(content) { etfitem in
+                        ETFDetailRow(etfDetail: etfitem)
+                    }
+                }
+                
+            }
         }
         .navigationBarTitle(Text(etf.name), displayMode: .inline)
     }
