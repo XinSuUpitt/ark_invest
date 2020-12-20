@@ -40,6 +40,8 @@
 		BBA49F09258F16C500E8D195 /* ETFItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA49F08258F16C500E8D195 /* ETFItem.swift */; };
 		BBA49F24258F1AD800E8D195 /* WebItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA49F23258F1AD800E8D195 /* WebItem.swift */; };
 		BBA49F3B258F1EAE00E8D195 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA49F3A258F1EAE00E8D195 /* SafariView.swift */; };
+		BBA49F40258F2A7700E8D195 /* ResourceWebPageList.json in Resources */ = {isa = PBXBuildFile; fileRef = BBA49F3F258F2A7700E8D195 /* ResourceWebPageList.json */; };
+		BBA49F45258F2BA200E8D195 /* ResourcesPageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA49F44258F2BA200E8D195 /* ResourcesPageItem.swift */; };
 		BBECED692583675B00289DB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBECED682583675B00289DB1 /* AppDelegate.swift */; };
 		BBECED6B2583675B00289DB1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBECED6A2583675B00289DB1 /* SceneDelegate.swift */; };
 		BBECED6D2583675B00289DB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBECED6C2583675B00289DB1 /* ContentView.swift */; };
@@ -101,6 +103,8 @@
 		BBA49F08258F16C500E8D195 /* ETFItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETFItem.swift; sourceTree = "<group>"; };
 		BBA49F23258F1AD800E8D195 /* WebItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebItem.swift; sourceTree = "<group>"; };
 		BBA49F3A258F1EAE00E8D195 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		BBA49F3F258F2A7700E8D195 /* ResourceWebPageList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ResourceWebPageList.json; sourceTree = "<group>"; };
+		BBA49F44258F2BA200E8D195 /* ResourcesPageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesPageItem.swift; sourceTree = "<group>"; };
 		BBECED652583675B00289DB1 /* ark_invest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ark_invest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBECED682583675B00289DB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBECED6A2583675B00289DB1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -165,6 +169,7 @@
 		BB9695CB258894F800606EDF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BBA49F3F258F2A7700E8D195 /* ResourceWebPageList.json */,
 				BBA49F01258F104100E8D195 /* homeItemETF.json */,
 				BBA49F02258F104100E8D195 /* homeItemIPO.json */,
 				BBA49EF7258F0C6C00E8D195 /* homeItemWeb.json */,
@@ -211,6 +216,7 @@
 				BBA49EEA258F0A7700E8D195 /* IPOItem.swift */,
 				BBA49F08258F16C500E8D195 /* ETFItem.swift */,
 				BBA49F23258F1AD800E8D195 /* WebItem.swift */,
+				BBA49F44258F2BA200E8D195 /* ResourcesPageItem.swift */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -431,6 +437,7 @@
 				BB9695CD2588956B00606EDF /* etfData.json in Resources */,
 				BBECED722583675D00289DB1 /* Preview Assets.xcassets in Resources */,
 				BBA49EF8258F0C6C00E8D195 /* homeItemWeb.json in Resources */,
+				BBA49F40258F2A7700E8D195 /* ResourceWebPageList.json in Resources */,
 				BB969615258B29E600606EDF /* ipoData.json in Resources */,
 				BBECED6F2583675D00289DB1 /* Assets.xcassets in Resources */,
 				BBA49F03258F104200E8D195 /* homeItemETF.json in Resources */,
@@ -501,6 +508,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB9695B22588919700606EDF /* ETFModel.swift in Sources */,
+				BBA49F45258F2BA200E8D195 /* ResourcesPageItem.swift in Sources */,
 				BB9695F72589F22D00606EDF /* DeltaEnum.swift in Sources */,
 				BBA49F24258F1AD800E8D195 /* WebItem.swift in Sources */,
 				BBECED692583675B00289DB1 /* AppDelegate.swift in Sources */,

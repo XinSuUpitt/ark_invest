@@ -13,6 +13,7 @@ var ipos: [IPOModel] = load("ipoData.json")
 var homeItemWebs: [HomeItem] = load("homeItemWeb.json")
 var homeItemETFs: [HomeItem] = load("homeItemETF.json")
 var homeItemIPOs: [HomeItem] = load("homeItemIPO.json")
+var resourceWebPages: [HomeItem] = load("ResourceWebPageList.json")
 
 
 func load<T: Decodable>(_ filename: String) -> T {
