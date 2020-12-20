@@ -1,0 +1,32 @@
+[
+    {
+        "id": 0,
+        "name": "ARKK",
+        "url": "",
+        "image": "arkk"
+    },
+    {
+        "id": 1,
+        "name": "ARKW",
+        "url": "",
+        "image": "ark-next-generation-internet"
+    },
+    {
+        "id": 2,
+        "name": "ARKG",
+        "url": "",
+        "image": "ark-genomic-solution"
+    },
+    {
+        "id": 3,
+        "name": "ARKQ",
+        "url": "",
+        "image": "ark-autonomos-robotics"
+    },
+    {
+        "id": 4,
+        "name": "ARKF",
+        "url": "",
+        "image": "ark-fintech"
+    }
+]

@@ -10,6 +10,10 @@ import Foundation
 
 var etfs: [ETFModel] = load("etfData.json")
 var ipos: [IPOModel] = load("ipoData.json")
+var homeItemWebs: [HomeItem] = load("homeItemWeb.json")
+var homeItemETFs: [HomeItem] = load("homeItemETF.json")
+var homeItemIPOs: [HomeItem] = load("homeItemIPO.json")
+
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

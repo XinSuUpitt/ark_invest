@@ -1,0 +1,14 @@
+[
+    {
+        "id": 0,
+        "name": "Cathie's Ark",
+        "url": "https://cathiesark.com/",
+        "image": "cathiesark"
+    },
+    {
+        "id": 1,
+        "name": "Ark Invest",
+        "url": "https://ark-invest.com/",
+        "image": "ark-invest"
+    }
+]
