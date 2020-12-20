@@ -16,5 +16,35 @@
         "name": "新浪财经",
         "url": "https://finance.sina.com.cn/",
         "image": "ipo"
+    },
+    {
+        "id": 3,
+        "name": "ARKK Trades",
+        "url": "https://cathiesark.com/arkk/trades",
+        "image": "ipo"
+    },
+    {
+        "id": 4,
+        "name": "ARKQ Trades",
+        "url": "https://cathiesark.com/arkq/trades",
+        "image": "ipo"
+    },
+    {
+        "id": 5,
+        "name": "ARKW Trades",
+        "url": "https://cathiesark.com/arkw/trades",
+        "image": "ipo"
+    },
+    {
+        "id": 6,
+        "name": "ARKG Trades",
+        "url": "https://cathiesark.com/arkg/trades",
+        "image": "ipo"
+    },
+    {
+        "id": 7,
+        "name": "ARKF Trades",
+        "url": "https://cathiesark.com/arkf/trades",
+        "image": "ipo"
     }
 ]

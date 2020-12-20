@@ -16,6 +16,7 @@ struct ETFDetailModel: Hashable, Identifiable {
     var percentage: String
     var url: String
     var delta: DeltaModel
+    var fund: String
     
     func getColor() -> Color {
         switch delta.deltaEnum {

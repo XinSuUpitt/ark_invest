@@ -10,6 +10,8 @@ import SwiftUI
 
 struct ETFItem: View {
     var etf: HomeItem
+    
+    @State var showTrading = false
 
     var body: some View {
         ZStack {
@@ -27,6 +29,12 @@ struct ETFItem: View {
             Text(etf.name)
                 .foregroundColor(.primary)
                 .font(.system(size: 35, weight: .bold, design: .serif))
+                .onLongPressGesture {
+                    self.showTrading = true
+                }
+                .sheet(isPresented: $showTrading) {
+                    SafariView(url: URL(string: "https://cathiesark.com/" + etf.name.lowercased() + "/trades")!).edgesIgnoringSafeArea(.all)
+                }
         }
     }
 }
