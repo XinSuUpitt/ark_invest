@@ -70,7 +70,7 @@ class IPODetailModels: ObservableObject {
                         ticker = ""
                     }
                     
-                    if (ipoModel.id == 1) {
+                    if (ipoModel.id == 0) {
                         self.isChinaCompany(ticker: ticker!) { china in
                             if (china == true) {
                                 self.ipoList.append(IPODetailModel(id: arrays?.index(of: item) ?? 0, name: name ?? "", ticker: ticker ?? "", date: date ?? "", url: "https://robinhood.com/applink/instrument/?symbol=" + ticker!, price: price ?? ""))

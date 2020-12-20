@@ -10,12 +10,21 @@ import SwiftUI
 
 struct ETFDetailRow: View {
     var etfDetail: ETFDetailModel
+    @State var showSafariView = false
     
     var body: some View {
             HStack {
                 GeometryReader { gp in
                     let height: CGFloat = 30
-                    Text(etfDetail.name).frame(width: gp.size.width / 3, height: height , alignment: .leading).lineLimit(1)
+                    ZStack {
+                        Text(etfDetail.name).frame(width: gp.size.width / 3, height: height , alignment: .leading).lineLimit(1)
+                    }
+                    .onTapGesture {
+                        self.showSafariView = true
+                    }
+                    .sheet(isPresented: $showSafariView) {
+                        SafariView(url: URL(string: "https://finance.yahoo.com/quote/" + etfDetail.ticker)!).edgesIgnoringSafeArea(.all)
+                    }
                                         
                     Text(etfDetail.ticker).position(CGPoint(x: gp.size.width * 0.45, y: height/2))
                     

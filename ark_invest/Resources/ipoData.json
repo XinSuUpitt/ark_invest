@@ -1,12 +1,12 @@
 [
     {
         "id": 0,
-        "name": "IPO",
+        "name": "中概股IPO",
         "url": ""
     },
     {
         "id": 1,
-        "name": "中概股IPO",
+        "name": "IPO",
         "url": ""
     }
 ]
