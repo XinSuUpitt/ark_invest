@@ -93,7 +93,7 @@ class IPODetailModels: ObservableObject {
         let country = UserDefaults.standard.value(forKey: ticker) as? String
         if (country != nil) {
             let result = country ?? ""
-            print("Find country %s %s", result, ticker)
+//            print("Find country %s %s", result, ticker)
             completion(result == "CN")
             return
         }

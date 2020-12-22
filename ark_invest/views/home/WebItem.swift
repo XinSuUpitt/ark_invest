@@ -23,6 +23,7 @@ struct WebItem: View {
                     .scaledToFill()
                     .frame(width: 300, height: 155)
                     .cornerRadius(5)
+                    .blur(radius: 5)
             }
             .padding(.leading, 15)
             

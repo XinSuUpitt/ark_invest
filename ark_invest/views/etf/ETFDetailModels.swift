@@ -21,7 +21,7 @@ class ETFDetailsModels: ObservableObject {
     
     func download(etfModel: ETFModel) {
         
-        print("fetch from remote")
+//        print("fetch from remote")
         if (URL.init(string: etfModel.url) == nil) {
             return
         }

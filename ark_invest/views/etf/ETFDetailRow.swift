@@ -34,7 +34,7 @@ struct ETFDetailRow: View {
                     }
                     
                     if (etfDetail.delta.deltaEnum != DeltaEnum.remove) {
-                        Text(etfDetail.delta.deltaVal).position(CGPoint(x: gp.size.width * 5 / 6 + 45, y: height/2)).foregroundColor(etfDetail.getColor())
+                        Text(etfDetail.getValue()).position(CGPoint(x: gp.size.width * 5 / 6 + 40, y: height/2)).foregroundColor(etfDetail.getColor())
                             .onTapGesture {
                                 self.showTrading = true
                             }

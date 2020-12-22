@@ -29,6 +29,7 @@ struct ETFItem: View {
             Text(etf.name)
                 .foregroundColor(.primary)
                 .font(.system(size: 35, weight: .bold, design: .serif))
+                .onTapGesture{}
                 .onLongPressGesture {
                     self.showTrading = true
                 }

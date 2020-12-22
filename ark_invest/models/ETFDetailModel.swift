@@ -32,4 +32,11 @@ struct ETFDetailModel: Hashable, Identifiable {
                 return Color.blue
         }
     }
+    
+    func getValue() -> String {
+        let deltaVal: String = delta.deltaVal
+        let floatVal = abs(Float(deltaVal)!)
+        let res: String = String(format: "%.2f", floatVal)
+        return res
+    }
 }
