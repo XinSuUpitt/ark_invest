@@ -27,7 +27,6 @@ class IPODetailModels: ObservableObject {
         let nextWeekDate = Calendar.current.date(byAdding: .weekOfYear, value: 1, to: Date())!
         let nextWeekDateString = dateFormatter.string(from: nextWeekDate)
         
-        
         let url = URL(string: "https://finnhub.io/api/v1/calendar/ipo?from=" + lastWeekDateString + "&to=" + nextWeekDateString + "&token=bvdfr6f48v6tkd6gm0eg")
 
         var request = URLRequest(url: url!)

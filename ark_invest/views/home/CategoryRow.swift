@@ -55,7 +55,7 @@ struct CategoryRow: View {
                     VStack {
                         ForEach(items) { etfitem in
                             NavigationLink(destination: ETFDetail(etf: etfitem)) {
-                                ETFItem(etf: etfItems[etfitem.id])
+                                ETFItem(etf: etfItems[etfitem.id], model: etfitem)
                             }
                         }
                     }

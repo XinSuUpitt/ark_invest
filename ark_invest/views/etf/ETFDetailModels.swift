@@ -80,7 +80,8 @@ class ETFDetailsModels: ObservableObject {
                 if (oldCompanyDict != nil) {
                     let oldDate = oldCompanyDict!["date"] as! Array<String>
                     if (date[0] == oldDate[0]) {
-//                        print("Same date, no need to fetch new")
+                        // print("Same date, no need to fetch new")
+                        
                         let tickers = oldCompanyDict!["ticker"] as! Array<String>
                         let weights = oldCompanyDict!["weight(%)"] as! Array<String>
                         let companies = oldCompanyDict!["company"] as! Array<String>
@@ -114,7 +115,7 @@ class ETFDetailsModels: ObservableObject {
                             self.removedEtfDetails.append(ETFDetailModel(id: 0, name: "N/A", ticker: "", percentage: "", url: "https://robinhood.com/applink/instrument/?symbol=", delta: DeltaModel(id: 0, deltaEnum: DeltaEnum.remove, deltaVal: ""), fund: oldFund[0]))
                         }
                         self.etfDetails.append(ETFDetailPageSectionModel(id: 0, name: "Recently Removed", content: self.removedEtfDetails))
-                        self.etfDetails.append(ETFDetailPageSectionModel(id: 1, name: "Current", content: self.etfDetailModels))
+                        self.etfDetails.append(ETFDetailPageSectionModel(id: 1, name: date[0], content: self.etfDetailModels))
                         
                         return
                     }
@@ -149,12 +150,15 @@ class ETFDetailsModels: ObservableObject {
                             }
                         }
                         if (newAdded) {
-                            let model = ETFDetailModel(id: i, name: companies[i], ticker: tickers[i], percentage: weights[i], url: "https://robinhood.com/applink/instrument/?symbol=" + tickers[i], delta: DeltaModel(id: i, deltaEnum: DeltaEnum.newAdded, deltaVal: weights[i]), fund: fund[i])
+                            let model = ETFDetailModel(id: i, name: companies[i], ticker: tickers[i], percentage: weights[i], url: "https://robinhood.com/applink/instrument/?symbol=" + tickers[i], delta: DeltaModel(id: i, deltaEnum: DeltaEnum.newAdded, deltaVal: shares[i]), fund: fund[i])
                             self.etfDetailModels.append(model)
                             mutableDelta.add(String(describing: "100"))
                         } else {
                             let idx: Int = oldCusips.firstIndex(of: cusips[i])!
-                            let delta = Float(weights[i])! - Float(oldWeights[idx])!
+                            var delta: Float = 0
+                            if (oldShares[idx] != "0") {
+                                delta = (Float(shares[i])! - Float(oldShares[idx])!) / Float(oldShares[idx])!
+                            }
                             var model: ETFDetailModel
                             if (delta == 0) {
                                 model = ETFDetailModel(id: i, name: companies[i], ticker: tickers[i], percentage: weights[i], url: "https://robinhood.com/applink/instrument/?symbol=" + tickers[i], delta: DeltaModel(id: i, deltaEnum: DeltaEnum.noChange, deltaVal: "0"), fund: fund[i])

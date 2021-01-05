@@ -10,6 +10,8 @@ import SwiftUI
 
 struct ETFItem: View {
     var etf: HomeItem
+    var model: ETFModel
+    @State var showETF: Bool = false
     
     @State var showTrading = false
 
@@ -26,16 +28,23 @@ struct ETFItem: View {
             .padding(.leading, 15)
             .padding(.trailing, 15)
             
-            Text(etf.name)
-                .foregroundColor(.primary)
-                .font(.system(size: 35, weight: .bold, design: .serif))
-                .onTapGesture{}
-                .onLongPressGesture {
-                    self.showTrading = true
-                }
-                .sheet(isPresented: $showTrading) {
-                    SafariView(url: URL(string: "https://cathiesark.com/" + etf.name.lowercased() + "/trades")!).edgesIgnoringSafeArea(.all)
-                }
+            NavigationLink(
+                destination: ETFDetail(etf: model),
+                isActive: $showETF,
+                label: {
+                    Text(etf.name)
+                        .foregroundColor(.primary)
+                        .font(.system(size: 35, weight: .bold, design: .serif))
+                        .onTapGesture{
+                            self.showETF.toggle()
+                        }
+                        .onLongPressGesture {
+                            self.showTrading = true
+                        }
+                        .sheet(isPresented: $showTrading) {
+                            SafariView(url: URL(string: "https://cathiesark.com/" + etf.name.lowercased() + "/trades")!).edgesIgnoringSafeArea(.all)
+                        }
+                })
         }
     }
 }
